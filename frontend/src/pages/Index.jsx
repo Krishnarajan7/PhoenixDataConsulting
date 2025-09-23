@@ -18,12 +18,16 @@ import {
   ArrowRight,
   Star,
   Award,
+  BookOpen, // New Icon
+  GraduationCap, // New Icon
+  Laptop, // New Icon
 } from "lucide-react";
 
 const Index = () => {
   const heroAnimation = useScrollAnimation();
   const introAnimation = useScrollAnimation();
   const servicesAnimation = useScrollAnimation();
+  const karpithalAnimation = useScrollAnimation(); // New animation hook
   const presenceAnimation = useScrollAnimation();
   const ctaAnimation = useScrollAnimation();
 
@@ -49,6 +53,33 @@ const Index = () => {
       icon: Cloud,
       title: "SAP Solutions",
       description: "SAP modules including FICO, BI, BASIS, and ABAP",
+    },
+  ];
+
+  const karpithalFeatures = [
+    {
+      icon: BookOpen,
+      title: "Vast Course Library",
+      description:
+        "Access thousands of courses from top instructors across a wide range of industries and technologies.",
+    },
+    {
+      icon: GraduationCap,
+      title: "Expert-Led Instruction",
+      description:
+        "Learn from real-world practitioners and subject matter experts in your field.",
+    },
+    {
+      icon: Laptop,
+      title: "Flexible Learning",
+      description:
+        "Study at your own pace with lifetime access to courses and on-demand video lectures.",
+    },
+    {
+      icon: Users,
+      title: "Community & Support",
+      description:
+        "Join a global community of learners and engage with instructors through Q&A forums.",
     },
   ];
 
@@ -373,11 +404,105 @@ const Index = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="px-8 py-6 text-lg border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary shadow-lg transition-all duration-300"
+                className="px-8 py-6 text-lg border-primary-foreground text-black/40 hover:bg-primary-foreground hover:text-primary shadow-lg transition-all duration-300"
                 asChild
               >
                 <Link to="/odc">Learn About ODC</Link>
               </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Karpithal Section */}
+      <section className="py-20 lg:py-28 bg-gradient-to-br from-background/50 to-muted/50">
+        <div className="container mx-auto px-4" ref={karpithalAnimation.ref}>
+          <div
+            className={`flex flex-col lg:flex-row items-center gap-12 ${
+              animationVariants.fadeUp
+            } ${
+              karpithalAnimation.isVisible
+                ? animationVariants.fadeUpVisible
+                : animationVariants.fadeUpHidden
+            }`}
+          >
+            {/* Left: Text Content */}
+            <div className="flex-1 space-y-6 text-center lg:text-left">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                Karpithal: Your Learning Journey Starts Here
+              </h2>
+              <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                As a proud subsidiary, we leverage Karpithal's world-class
+                online learning platform to empower professionals with
+                practical, in-demand skills. Access a wide range of courses,
+                expert-led instruction, and flexible learning options designed
+                to elevate your career.
+              </p>
+
+              {/* Features Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
+                {karpithalFeatures.map((feature, index) => (
+                  <Card
+                    key={index}
+                    className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-0 bg-background/80 backdrop-blur-sm"
+                  >
+                    <CardContent className="p-6 text-center space-y-4">
+                      <div className="w-14 h-14 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl flex items-center justify-center mx-auto">
+                        <feature.icon className="h-6 w-6 text-primary" />
+                      </div>
+                      <h3 className="text-lg font-semibold">{feature.title}</h3>
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        {feature.description}
+                      </p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+
+              {/* Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center lg:justify-start">
+                <Button
+                  size="lg"
+                  className="px-8 py-5 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  asChild
+                >
+                  <a
+                    href="https://www.karpithal.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Explore Courses
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </a>
+                </Button>
+
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="px-8 py-5 text-lg border-primary/30 hover:bg-primary/5 hover:text-primary transition-all duration-300"
+                  asChild
+                >
+                  <a
+                    href="https://www.karpithal.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Visit Karpithal
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </a>
+                </Button>
+              </div>
+            </div>
+
+            {/* Right: Image */}
+            <div className="flex-1 w-full flex justify-center lg:justify-end">
+              <div className="w-full max-w-lg sm:max-w-xl lg:max-w-2xl h-64 sm:h-80 lg:h-96 rounded-xl overflow-hidden shadow-lg">
+                <img
+                  src="/karpithal.png" 
+                  alt="Karpithal Learning Platform"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
