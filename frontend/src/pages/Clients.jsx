@@ -67,7 +67,7 @@ const Clients = () => {
     },
     {
       region: "Middle East",
-      clients: ["AspireSys (Bahrain)", "Emirates NBD (Dubai)"],
+      clients: ["Bahrain Defence Force", "Emirates NBD (Dubai)"],
       description: "Banking and technology services",
     },
     {
