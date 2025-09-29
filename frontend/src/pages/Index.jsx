@@ -34,24 +34,24 @@ const Index = () => {
   const services = [
     {
       icon: Database,
-      title: "Data Warehouse & BI",
+      title: "DEVELOPMENT",
       description:
         "Comprehensive data warehousing and business intelligence solutions",
     },
     {
       icon: BarChart3,
-      title: "Big Data Analytics",
+      title: "CONSULTING",
       description:
         "Advanced analytics and data visualization for better insights",
     },
     {
       icon: Smartphone,
-      title: "Mobile Development",
+      title: "TRAINING",
       description: "Native mobile applications for Android and iOS platforms",
     },
     {
       icon: Cloud,
-      title: "SAP Solutions",
+      title: "PAYROLL",
       description: "SAP modules including FICO, BI, BASIS, and ABAP",
     },
   ];
@@ -401,14 +401,14 @@ const Index = () => {
               >
                 <Link to="/contact">Get Started</Link>
               </Button>
-              <Button
+              {/* <Button
                 size="lg"
                 variant="outline"
                 className="px-8 py-6 text-lg border-primary-foreground text-black/40 hover:bg-primary-foreground hover:text-primary shadow-lg transition-all duration-300"
                 asChild
               >
                 <Link to="/odc">Learn About ODC</Link>
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
@@ -432,11 +432,7 @@ const Index = () => {
                 Karpithal: Your Learning Journey Starts Here
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                As a proud subsidiary, we leverage Karpithal's world-class
-                online learning platform to empower professionals with
-                practical, in-demand skills. Access a wide range of courses,
-                expert-led instruction, and flexible learning options designed
-                to elevate your career.
+                Karpithal, a leading online learning platform , empowering College Students and  professionals with cutting-edge technology skills. With thousands of courses across various domains, expert-led instruction, and a vibrant community, Karpithal is your go-to destination for lifelong learning and career advancement.
               </p>
 
               {/* Features Grid */}

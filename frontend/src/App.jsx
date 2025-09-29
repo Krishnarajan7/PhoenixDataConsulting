@@ -6,8 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Services from "./pages/Services";
-import ODC from "./pages/ODC";
-import Team from "./pages/Team";
+// import ODC from "./pages/ODC";
+// import Team from "./pages/Team";
 import Projects from "./pages/Projects";
 import Infrastructure from "./pages/Infrastructure";
 import Training from "./pages/Training";
@@ -27,8 +27,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/odc" element={<ODC />} />
-          <Route path="/team" element={<Team />} />
+          {/* <Route path="/odc" element={<ODC />} /> */}
+          {/* <Route path="/team" element={<Team />} /> */}
           <Route path="/projects" element={<Projects />} />
           <Route path="/infrastructure" element={<Infrastructure />} />
           <Route path="/training" element={<Training />} />

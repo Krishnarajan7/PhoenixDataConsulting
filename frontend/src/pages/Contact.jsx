@@ -25,13 +25,13 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      details: ["baktha.bharani@gmail.com", "sowmidevaki@gmail.com"],
+      details: ["baktha.bharani@gmail.com"],
       description: "Send us an email anytime"
     },
     {
       icon: Phone,
       title: "Phone",
-      details: ["+91 9344834879 (Baktha Kumar)", "+91 9677532130 (Sowmiya)"],
+      details: ["+91 9344834879 (Baktha Kumar)"],
       description: "Call us during business hours"
     },
     {

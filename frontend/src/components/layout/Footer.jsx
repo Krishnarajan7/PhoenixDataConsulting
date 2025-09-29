@@ -30,8 +30,8 @@ const Footer = () => {
               <Link to="/services" className="block text-sm hover:text-primary transition-colors">
                 Services
               </Link>
-              <Link to="/odc" className="block text-sm hover:text-primary transition-colors">
-                Offshore Development Center
+              <Link to="/contact" className="block text-sm hover:text-primary transition-colors">
+                Contact
               </Link>
               <Link to="/training" className="block text-sm hover:text-primary transition-colors">
                 Training
@@ -43,11 +43,10 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Services</h3>
             <div className="space-y-2">
-              <div className="text-sm opacity-90">Data Warehouse & BI</div>
-              <div className="text-sm opacity-90">Big Data Analytics</div>
-              <div className="text-sm opacity-90">Mobile Development</div>
-              <div className="text-sm opacity-90">SAP Solutions</div>
-              <div className="text-sm opacity-90">Training Programs</div>
+              <div className="text-sm opacity-90">Development</div>
+              <div className="text-sm opacity-90">Consulting</div>
+              <div className="text-sm opacity-90">Training</div>
+              <div className="text-sm opacity-90">Payroll</div>
             </div>
           </div>
 
@@ -59,18 +58,18 @@ const Footer = () => {
                 <Mail className="h-4 w-4" />
                 <span>baktha.bharani@gmail.com</span>
               </div>
-              <div className="flex items-center space-x-2 text-sm">
+              {/* <div className="flex items-center space-x-2 text-sm">
                 <Mail className="h-4 w-4" />
                 <span>sowmidevaki@gmail.com</span>
-              </div>
+              </div> */}
               <div className="flex items-center space-x-2 text-sm">
                 <Phone className="h-4 w-4" />
                 <span>+91 9344834879</span>
               </div>
-              <div className="flex items-center space-x-2 text-sm">
+              {/* <div className="flex items-center space-x-2 text-sm">
                 <Phone className="h-4 w-4" />
                 <span>+91 9677532130</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
