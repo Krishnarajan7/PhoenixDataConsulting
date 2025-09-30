@@ -108,6 +108,7 @@ const Index = () => {
                 : animationVariants.fadeUpHidden
             }`}
           >
+            {/* Badge */}
             <div className="flex items-center justify-center gap-2 mb-6">
               <Badge
                 variant="outline"
@@ -118,6 +119,7 @@ const Index = () => {
               </Badge>
             </div>
 
+            {/* Heading */}
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold tracking-tight leading-tight">
               Becoming the leader in{" "}
               <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
@@ -125,11 +127,12 @@ const Index = () => {
               </span>
             </h1>
 
+            {/* Paragraph */}
             <div className="space-y-4">
               <p className="text-xl md:text-2xl text-muted-foreground font-medium">
                 Mobile, Social, Cloud and Big Data
               </p>
-              <p className="text-lg max-w-3xl mx-auto text-muted-foreground leading-relaxed">
+              <p className="text-lg max-w-3xl mx-auto text-muted-foreground leading-relaxed text-justify">
                 Phoenix Data Consulting is the consulting arm of Axiom
                 Semantics, providing comprehensive IT solutions and training
                 services globally since 2010. We're a subsidiary of{" "}
@@ -139,7 +142,8 @@ const Index = () => {
               </p>
             </div>
 
-            <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground mb-8">
+            {/* Stats Row */}
+            <div className="flex flex-wrap items-center justify-center gap-2 text-sm text-muted-foreground mb-8">
               <Award className="w-4 h-4 text-primary" />
               <span>Trusted by 45+ Corporate Clients</span>
               <span className="mx-2">•</span>
@@ -147,7 +151,8 @@ const Index = () => {
               <span>5000+ Trained Professionals</span>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+            {/* Buttons */}
+            <div className="grid grid-cols-2 lg:flex lg:justify-center gap-4 max-w-xl mx-auto pt-4">
               <Button
                 size="lg"
                 className="text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300"
@@ -158,6 +163,7 @@ const Index = () => {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
+
               <Button
                 variant="outline"
                 size="lg"
@@ -173,10 +179,12 @@ const Index = () => {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
+
+              {/* Mobile: full width below, Desktop: inline with others */}
               <Button
                 variant="outline"
                 size="lg"
-                className="text-lg px-8 py-6 border-primary/30 hover:bg-secondary/40 hover:text-primary/100"
+                className="col-span-2 lg:col-span-1 text-lg px-8 py-6 border-primary/30 hover:bg-secondary/40 hover:text-primary/100"
                 asChild
               >
                 <Link to="/contact">Contact Us</Link>
@@ -432,7 +440,12 @@ const Index = () => {
                 Karpithal: Your Learning Journey Starts Here
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                Karpithal, a leading online learning platform , empowering College Students and  professionals with cutting-edge technology skills. With thousands of courses across various domains, expert-led instruction, and a vibrant community, Karpithal is your go-to destination for lifelong learning and career advancement.
+                Karpithal, a leading online learning platform , empowering
+                College Students and professionals with cutting-edge technology
+                skills. With thousands of courses across various domains,
+                expert-led instruction, and a vibrant community, Karpithal is
+                your go-to destination for lifelong learning and career
+                advancement.
               </p>
 
               {/* Features Grid */}
@@ -494,7 +507,7 @@ const Index = () => {
             <div className="flex-1 w-full flex justify-center lg:justify-end">
               <div className="w-full max-w-lg sm:max-w-xl lg:max-w-2xl h-64 sm:h-80 lg:h-96 rounded-xl overflow-hidden shadow-lg">
                 <img
-                  src="/karpithal.png" 
+                  src="/images/karpithal.png"
                   alt="Karpithal Learning Platform"
                   className="w-full h-full object-cover"
                 />

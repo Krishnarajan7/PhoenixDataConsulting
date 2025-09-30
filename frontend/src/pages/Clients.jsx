@@ -25,7 +25,7 @@ const Clients = () => {
   const corporateClients = [
     "Mphasis",
     "Wipro",
-    "AspireSys (Bahrain)",
+    "Bahrain Defence Force",
     "Hexaware",
     "Accenture",
     "Bank Of America",

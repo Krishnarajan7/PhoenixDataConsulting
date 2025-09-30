@@ -154,9 +154,9 @@ const Services = () => {
               <Button size="lg" variant="secondary" asChild>
                 <Link to="/contact">Get Quote</Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-primary-foreground text-black/50 hover:bg-primary-foreground hover:text-primary" asChild>
+              {/* <Button size="lg" variant="outline" className="border-primary-foreground text-black/50 hover:bg-primary-foreground hover:text-primary" asChild>
                 <Link to="/odc">Learn About ODC</Link>
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
