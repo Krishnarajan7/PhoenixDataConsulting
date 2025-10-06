@@ -68,7 +68,8 @@ export const Header = () => {
                                 aria-label="home"
                                 onClick={handleNavClick}
                                 className="flex gap-2 items-center">
-                             <p className='font-semibold text-xl tracking-tighter text-primary'>Phoenix Data Consulting</p>  
+                            <p className="font-extrabold text-xl tracking-tight bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text text-transparent">  Phoenix Data Consulting</p>
+
                             </Link>
                         </div>
 
