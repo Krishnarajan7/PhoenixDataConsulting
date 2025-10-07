@@ -10,12 +10,12 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="text-2xl font-bold">Phoenix Data Consulting</div>
             <p className="text-sm opacity-90">
-              Becoming the leader in Next Gen IT - Mobile, Social, Cloud and Big Data
+              Becoming the leader in Next Gen AI - Mobile, Social, Cloud and Big Data
             </p>
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-sm">
                 <Globe className="h-4 w-4" />
-                <span>www.phoenixitac.com</span>
+                <span>phoenixdataconsulting.in/</span>
               </div>
             </div>
           </div>

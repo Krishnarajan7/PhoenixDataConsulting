@@ -18,16 +18,16 @@ import {
   ArrowRight,
   Star,
   Award,
-  BookOpen, // New Icon
-  GraduationCap, // New Icon
-  Laptop, // New Icon
+  BookOpen, 
+  GraduationCap, 
+  Laptop, 
 } from "lucide-react";
 
 const Index = () => {
   const heroAnimation = useScrollAnimation();
   const introAnimation = useScrollAnimation();
   const servicesAnimation = useScrollAnimation();
-  const karpithalAnimation = useScrollAnimation(); // New animation hook
+  const karpithalAnimation = useScrollAnimation(); 
   const presenceAnimation = useScrollAnimation();
   const ctaAnimation = useScrollAnimation();
 
@@ -123,14 +123,14 @@ const Index = () => {
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold tracking-tight leading-tight">
               Becoming the leader in{" "}
               <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Next Gen IT
+                Next Gen AI
               </span>
             </h1>
 
             {/* Paragraph */}
             <div className="space-y-4">
               <p className="text-xl md:text-2xl text-muted-foreground font-medium">
-                Mobile, Social, Cloud and Big Data
+                Social, Cloud and Big Data
               </p>
               <p className="text-lg max-w-3xl mx-auto text-muted-foreground leading-relaxed text-justify">
                 Phoenix Data Consulting is the consulting arm of Axiom

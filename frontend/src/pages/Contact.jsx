@@ -56,7 +56,7 @@ const Contact = () => {
       location: "Pondicherry",
       address:
         " No 10 Block IV , Kavikuyil Street, Ashok Nagar, Lawspet, Pondicherry",
-      description: "Middle East operations and client services",
+      description: "Main development center with 24x7 access",
       services: ["Consulting", "Client Relations"],
     },
   ];
